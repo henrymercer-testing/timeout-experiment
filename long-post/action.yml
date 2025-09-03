@@ -1,0 +1,6 @@
+name: "Long Post Action"
+description: "An action with a post step that logs elapsed minutes forever."
+runs:
+  using: "node20"
+  main: "dist/index.js"
+  post: "dist/post.js"
