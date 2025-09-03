@@ -1,0 +1,11 @@
+name: Long post experiment
+on:
+  workflow_dispatch:
+jobs:
+  long-post-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Long Post Action
+        uses: ./long-post
