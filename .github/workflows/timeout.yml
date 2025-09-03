@@ -5,6 +5,7 @@ jobs:
   long-post-job:
     runs-on: ubuntu-latest
     timeout-minutes: 3
+    cancel-timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
